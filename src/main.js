@@ -54,7 +54,9 @@ const update = (state, action) => {
   if (action.type == 'increment') state.counter++
   if (action.type == 'decrement') state.counter--
   if (action.type == 'set') state.counter = action.value
-  if (action.type == 'keydown') if (!action.repeat) state.pressedKeys.push(action.key)
+  if (action.type == 'keydown') { 
+    if (!action.repeat) state.pressedKeys.push(action.key)
+  }
   if (action.type == 'keyup') state.pressedKeys.splice(state.pressedKeys.indexOf(action.key), 1)
   if (action.type == 'blur') state.pressedKeys = []
   return state
