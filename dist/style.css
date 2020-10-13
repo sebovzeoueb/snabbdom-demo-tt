@@ -1,0 +1,34 @@
+h1 {
+  font-size: 8rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.button {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+#readouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readout {
+  font-size: 4rem;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  background-color: tomato;
+}
